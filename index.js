@@ -49,7 +49,7 @@ const dataObj=JSON.parse(data);
 
 const slugs=dataObj.map(el=>slugify(el.productName,{lower:false}));
     
-console.log(slugs);
+console.log(slug);
 
 const server=http.createServer((req,res)=>{
     const {query,pathname}=url.parse(req.url,true);
